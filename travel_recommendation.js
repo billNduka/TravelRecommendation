@@ -78,7 +78,7 @@ function search() {
   showResults(results);
 }
 
-// runs when the Clear button is clicked
+// Runs for when the Clear button is clicked
 function clearResults() {
   resultsDiv.innerHTML = "";
   searchInput.value = "";
