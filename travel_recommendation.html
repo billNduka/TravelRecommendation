@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Recommendations</title>
+  <style>
+    body {
+      background: url(./backgroundimg.webp);
+    }
+    nav {
+      background: #333;
+      border: 3px double #888;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    #results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+    }
+    .card {
+      background: #333;
+      border: 3px double #888;
+      padding: 10px;
+      color: white;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="travel_recommendation.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><input type="search" id="searchInput" placeholder="Search locations"></li>
+      <li><button id="searchBtn">Search</button></li>
+      <li><button id="clearBtn">Clear</button></li>
+    </ul>
+  </nav>
+
+  <h1>Explore Your Dream Destination</h1>
+  <p>Choose from our suite of available retreats, go on an adventure to remember for a lifetime.</p>
+
+  <div id="results"></div>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
